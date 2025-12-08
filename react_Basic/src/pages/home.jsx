@@ -1,10 +1,10 @@
-// import {useState} from "react";
-import React from "react";
-import { UserProfile } from "./component/user.profile.jsx";
-import Child from "./component/child.jsx";
+import React from 'react'
+import { useState } from "react";
+import Child from "../components/child";
+import { UserProfile } from "../components/user.profile";
 
-function Home() {
-  const [show, setShow] = React.useState(true);
+const Home = () => {
+      const [show , setShow] = useState(true)
   return (
     <>
       <div>
@@ -64,7 +64,8 @@ function Home() {
         {/* <UserProfile user={{name:'Alice', email:'Alice@gmail.com', phone:'1234543',}} /> */}
         {/* 
         <UserProfile name={"Jaman"} email={"jaman@react.com"} />
-        <UserProfile name={"Fams"} email={"fams@react.com"} phone={12345688} /> */}
+        <UserProfile name={"Fams"} email={"fams@react.com"} phone={12345688} /> 
+        */}
       </div>
     </>
   );
