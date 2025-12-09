@@ -1,4 +1,5 @@
 import React from "react";
+// import { useState } from "react";
 
 // ! UserProfile component with hardcoded user data
 
@@ -29,11 +30,28 @@ import React from "react";
 //! UserProfile component to display user information
 
 export const UserProfile = ({ name, email, phone}) => {
+
+const onEdit = () => {
+  alert(`Editing user: ${name}`);
+}
+
+const onchange = (e) => {
+  console.log("Input changed:", e.target.value);
+}
+
+
   return (
     <div >
       <h2>{name}</h2>
       <p>{email}</p>
       <p>{phone}</p>
+      <input type="text" onChange={onchange} />
+      <input type="number" />
+      <input type="file" />
+      <input type="radio" />
+
+
+      <button onClick={onEdit}>Edit User</button>
     </div>
   );
 };

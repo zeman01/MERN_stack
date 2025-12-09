@@ -37,6 +37,8 @@ const Home = () => {
             DOM (unmounting phase)
           </li>
           <li> Conditional Rendering</li>
+          <li>Events</li>
+          <li>click, change, hover</li>
         </ul>
 
         {/* child a  -> child b  ..... z */}
