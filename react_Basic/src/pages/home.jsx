@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import { useState } from "react";
 import Child from "../components/child";
 import { UserProfile } from "../components/user.profile";
 
 const Home = () => {
-      const [show , setShow] = useState(true)
+  const [show, setShow] = useState(true);
   return (
     <>
       <div>
@@ -38,7 +38,42 @@ const Home = () => {
           </li>
           <li> Conditional Rendering</li>
           <li>Events</li>
-          <li>click, change, hover</li>
+          <li>click, change, hover, submit</li>
+        </ul>
+        <h2> Tags </h2>
+        <ul>
+          <li>Structure tags</li>
+          <li>text</li>
+          {/* h1-h6, p */}
+          <li>Semantic Tags</li>
+          {/* head, nav, main, aside, footer, section */}
+          <li>Non Semantic Tags</li>
+          {/* div, span */}
+          <li>List</li>
+          {/* ul, ol, li */}
+          <li>Media Tags</li>
+          {/* img, video, audio */}
+          <li>Input Tags</li>
+          {/* input, select, textarea, button */}
+
+          <h2>Block, inline, inline-block</h2>
+          <h3>Block</h3>
+          <li>takes screen/ parent width</li>
+          <li>can set height and width</li>
+          <li>starts with new line</li>
+          {/* div, h1-h6, p, ul, ol, li, section, header, footer */}
+
+          <h3>Inline</h3>
+          <li>takes only required width</li>
+          <li>cannot set height and width</li>
+          <li>does not start with new line</li>
+          {/* span, a, img, input */}
+
+          <h3>Inline-Block</h3>
+          <li>takes only required width</li>
+          <li>can set height and width</li>
+          <li>does not start with new line</li>
+          {/* button */}
         </ul>
 
         {/* child a  -> child b  ..... z */}
@@ -51,7 +86,7 @@ const Home = () => {
           }}
         >
           {" "}
-          Toggle Child Component{" "}
+          Child Component{" "}
         </button>
 
         {/* conditional rendering */}
@@ -71,7 +106,7 @@ const Home = () => {
       </div>
     </>
   );
-}
+};
 
 export default Home;
 

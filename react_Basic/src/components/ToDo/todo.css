@@ -1,0 +1,18 @@
+/* selectors */
+
+/* universal */
+
+/* element */
+/* elementName { styling } */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+}
+
+/* class */
+/* .className { styling }*/
+
+/* id */
+/* #idName {  Styling  } */

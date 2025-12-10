@@ -14,7 +14,7 @@ function App() {
           <div>
             <Link to="/"> Home </Link>
             <Link to="/about"> About </Link>
-            <Link to="/services"> Services </Link>
+            <Link to="/services">  Our Services </Link>
             <Link to="/todo" > Todo </Link>
           </div>
           <Routes>
@@ -34,8 +34,3 @@ function App() {
 
 export default App;
 
-// json {"name":"val"}
-
-// xml
-
-// person
