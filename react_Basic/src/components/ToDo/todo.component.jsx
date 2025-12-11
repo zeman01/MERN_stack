@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
-import { TodoInput } from "./todo-input";
-import { TodoList } from "./todo-list";
+import { TodoInput } from "./todo.input";
+import { TodoList } from "./todo.list";
 
 import './todo.css'
 
@@ -65,7 +65,7 @@ const TodoComponent = () => {
 
   return (
     <div>
-      {/* todo inut  */}
+      {/* todo input  */}
       <TodoInput
         todo={todo}
         handleChange={handleChange}
