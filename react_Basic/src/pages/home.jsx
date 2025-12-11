@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Child from "../components/child";
 import { UserProfile } from "../components/user.profile";
+import WrapperCard from "../components/wrapper";
 
 const Home = () => {
   const [show, setShow] = useState(true);
@@ -75,6 +76,8 @@ const Home = () => {
           <li>does not start with new line</li>
           {/* button */}
         </ul>
+        <h3>Wrapper component</h3>
+        {/*  */}
 
         {/* child a  -> child b  ..... z */}
 
@@ -97,6 +100,16 @@ const Home = () => {
         <Child />
 
         <UserProfile />
+
+        <WrapperCard>
+          <h1>wrapper card</h1>
+        </WrapperCard>
+
+        <WrapperCard>
+          <UserProfile
+            user={{ name: "Bob", email: "bob@bob.com", phone: "9876543210" }}
+          />
+        </WrapperCard>
 
         {/* <UserProfile user={{name:'Alice', email:'Alice@gmail.com', phone:'1234543',}} /> */}
         {/* 
